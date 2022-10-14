@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <!-- barColorWhenSelected="#FF0000"-->
+
+    <!-- barColorWhenSelected="#D2691E"/>-->
+    <tab
+            id="@+id/tab_discover"
+            icon="@drawable/discover_icon"
+            title="发现"
+            barColorWhenSelected="@color/lightseagreen"/>
+
+    <tab
+            id="@+id/tab_listener"
+            icon="@drawable/listen_icon"
+            title="播客"
+            barColorWhenSelected="@color/deepskyblue"/>
+
+
+
+    <!--         barColorWhenSelected="#00BFFF"/>-->
+</tabs>
