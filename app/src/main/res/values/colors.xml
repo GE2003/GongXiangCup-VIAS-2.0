@@ -185,4 +185,7 @@
     <color name="navy">#000080</color>
     <!-- 海军色 -->
     <color name="grey">#696969</color>
+<color name="btn_blue">#4686F9</color>
+
+
 </resources>

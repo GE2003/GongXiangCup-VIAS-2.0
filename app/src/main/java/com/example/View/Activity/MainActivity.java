@@ -1,9 +1,10 @@
-package com.example.shiyue;
+package com.example.View.Activity;
 
 import android.view.View;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.example.shiyue.R;
 
 public class MainActivity extends AppCompatActivity {
 
