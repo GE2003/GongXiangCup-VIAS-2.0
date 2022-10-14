@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent" android:background="#F0F0F0">
+
+    <ImageView
+            android:layout_width="419dp"
+            android:layout_height="74dp" app:srcCompat="@drawable/retancle" android:id="@+id/imageView9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="@string/todo1" app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+            android:layout_width="24dp"
+            android:layout_height="43dp" app:srcCompat="@drawable/back_btn" android:id="@+id/imageView10"
+            app:layout_constraintStart_toStartOf="@+id/imageView9"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9" app:layout_constraintHorizontal_bias="0.048"
+            android:contentDescription="@string/todo2" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"/>
+    <TextView
+            android:text="@string/feed_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView13"
+            android:textSize="28sp" android:textColor="#0C0C0C" app:layout_constraintStart_toEndOf="@+id/imageView10"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9" app:layout_constraintHorizontal_bias="0.416"
+            app:layout_constraintTop_toTopOf="@+id/imageView9"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"/>
+    <ImageView
+            android:layout_width="341dp"
+            android:layout_height="454dp" app:srcCompat="@drawable/retancle3" android:id="@+id/imageView15"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.126"
+            android:contentDescription="@string/todo3"/>
+    <TextView
+            android:text="@string/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15" app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="16sp" app:layout_constraintVertical_bias="0.121" android:textColor="#999999"
+            app:layout_constraintHorizontal_bias="0.495"/>
+    <com.skydoves.elasticviews.ElasticButton
+            android:layout_width="216dp"
+            android:background="@color/btn_blue"
+            android:layout_height="58dp"
+            app:button_cornerRadius="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:text="@string/commit"
+            android:textColorHint="#F1EFEF" android:textSize="24sp" android:textColor="#F3EEEE">
+
+    </com.skydoves.elasticviews.ElasticButton>
+    <TextView
+            android:text="@string/idea"
+            android:layout_width="307dp"
+            android:layout_height="416dp" android:id="@+id/textView15"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="@+id/imageView15"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+            app:layout_constraintEnd_toEndOf="@+id/imageView15"
+            app:layout_constraintStart_toStartOf="@+id/imageView15"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
