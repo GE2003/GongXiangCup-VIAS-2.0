@@ -16,8 +16,10 @@
     <ImageView
             android:layout_width="61dp"
             android:layout_height="53dp" app:srcCompat="@drawable/icon_round" android:id="@+id/imageView22"
-            tools:layout_editor_absoluteY="609dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="48dp" android:contentDescription="@string/todo1"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="48dp" android:contentDescription="@string/todo1"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.899"/>
     <ImageView
             android:layout_width="411dp"
             android:layout_height="79dp" app:srcCompat="@drawable/retancle" android:id="@+id/imageView17"
@@ -27,9 +29,10 @@
     <ImageView
             android:layout_width="25dp"
             android:layout_height="37dp" app:srcCompat="@drawable/back_btn" android:id="@+id/imageView18"
-            tools:layout_editor_absoluteY="22dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.041"
-            android:contentDescription="@string/todo3"/>
+            android:contentDescription="@string/todo3" app:layout_constraintTop_toTopOf="@+id/imageView17"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView17"/>
     <TextView
             android:text="@string/result"
             android:layout_width="wrap_content"
@@ -52,14 +55,19 @@
     <TextView
             android:text="@string/result"
             android:layout_width="307dp"
-            android:layout_height="461dp" android:id="@+id/textView22" tools:layout_editor_absoluteY="99dp"
-            tools:layout_editor_absoluteX="53dp" android:textSize="24sp" android:textColor="#121111"/>
+            android:layout_height="461dp" android:id="@+id/textView22"
+            android:textSize="24sp" android:textColor="#121111"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+            app:layout_constraintTop_toTopOf="@+id/imageView20"
+            app:layout_constraintStart_toStartOf="@+id/imageView20"
+            app:layout_constraintEnd_toEndOf="@+id/imageView20"/>
     <ImageView
             android:layout_width="61dp"
             android:layout_height="53dp" app:srcCompat="@drawable/icon_round" android:id="@+id/imageView21"
-            tools:layout_editor_absoluteY="609dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView23" app:layout_constraintHorizontal_bias="0.452"
-            android:contentDescription="@string/todo"/>
+            android:contentDescription="@string/todo" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.899"/>
     <ImageView
             android:layout_width="61dp"
             android:layout_height="53dp" app:srcCompat="@drawable/round_blue" android:id="@+id/imageView23"
@@ -70,18 +78,24 @@
     <ImageView
             android:layout_width="32dp"
             android:layout_height="35dp" app:srcCompat="@drawable/icon_translate" android:id="@+id/imageView24"
-            tools:layout_editor_absoluteY="619dp" app:layout_constraintStart_toStartOf="@+id/imageView21"
-            app:layout_constraintEnd_toEndOf="@+id/imageView21" android:contentDescription="@string/todo"/>
+            app:layout_constraintStart_toStartOf="@+id/imageView21"
+            app:layout_constraintEnd_toEndOf="@+id/imageView21" android:contentDescription="@string/todo"
+            app:layout_constraintTop_toTopOf="@+id/imageView21"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView21"/>
     <ImageView
             android:layout_width="38dp"
             android:layout_height="34dp" app:srcCompat="@drawable/icon_listen" android:id="@+id/imageView25"
-            tools:layout_editor_absoluteY="619dp" app:layout_constraintEnd_toEndOf="@+id/imageView23"
-            app:layout_constraintStart_toStartOf="@+id/imageView23" android:contentDescription="@string/todo"/>
+            app:layout_constraintEnd_toEndOf="@+id/imageView23"
+            app:layout_constraintStart_toStartOf="@+id/imageView23" android:contentDescription="@string/todo"
+            app:layout_constraintTop_toTopOf="@+id/imageView23"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView23"/>
     <ImageView
             android:layout_width="37dp"
             android:layout_height="31dp" app:srcCompat="@drawable/icon_copy" android:id="@+id/imageView26"
-            tools:layout_editor_absoluteY="622dp" app:layout_constraintEnd_toEndOf="@+id/imageView22"
-            app:layout_constraintStart_toStartOf="@+id/imageView22" android:contentDescription="@string/todo5"/>
+            app:layout_constraintEnd_toEndOf="@+id/imageView22"
+            app:layout_constraintStart_toStartOf="@+id/imageView22" android:contentDescription="@string/todo5"
+            app:layout_constraintTop_toTopOf="@+id/imageView22"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView22"/>
     <TextView
             android:text="@string/translate"
             android:layout_width="wrap_content"
