@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_height="60dp">
+        <ImageView
+                android:layout_width="17dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/back_btn"
+                android:layout_height="30dp">
+        </ImageView>
+        <TextView
+                android:layout_width="114dp"
+                android:text="新闻"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="120dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:layout_height="41dp">
+        </TextView>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/line"
+            android:background="@color/grey"
+            android:layout_height="1dp">
+    </ImageView>
+<net.lucode.hackware.magicindicator.MagicIndicator
+        android:layout_width="match_parent"
+        android:id="@+id/news_indicator"
+        android:focusable="false"
+        android:minWidth="3dp"
+        android:minHeight="5dp"
+        android:layout_height="60dp">
+</net.lucode.hackware.magicindicator.MagicIndicator>
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_fr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>
