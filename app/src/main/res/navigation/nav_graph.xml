@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/nav_graph">
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/homeFragment">
 
+    <activity android:id="@+id/newsActivity" android:name="com.example.View.Activity.NewsActivity"
+              android:label="NewsActivity"/>
+    <fragment android:id="@+id/historyFragment" android:name="com.example.View.Fragment.HistoryFragment"
+              android:label="HistoryFragment"/>
+    <fragment android:id="@+id/collectFragment" android:name="com.example.View.Fragment.CollectFragment"
+              android:label="CollectFragment"/>
+    <fragment android:id="@+id/personalFragment" android:name="com.example.View.Fragment.PersonalFragment"
+              android:label="PersonalFragment"/>
+    <fragment android:id="@+id/baseFragment"
+              app:defaultNavHost="true"
+              android:name="com.example.Base.BaseFragment" android:label="BaseFragment">
+        <action android:id="@+id/action_baseFragment_to_newsActivity" app:destination="@id/newsActivity"/>
+        <action android:id="@+id/action_baseFragment_to_collectFragment" app:destination="@id/collectFragment"/>
+        <action android:id="@+id/action_baseFragment_to_personalFragment" app:destination="@id/personalFragment"/>
+        <action android:id="@+id/action_baseFragment_to_collectFragment2" app:destination="@id/collectFragment"/>
+    </fragment>
+    <fragment android:id="@+id/homeFragment" android:name="com.example.View.Fragment.HomeFragment"
+              android:label="HomeFragment">
+        <action android:id="@+id/action_homeFragment_to_historyFragment" app:destination="@id/historyFragment"/>
+        <action android:id="@+id/action_homeFragment_to_collectFragment" app:destination="@id/collectFragment"/>
+        <action android:id="@+id/action_homeFragment_to_personalFragment" app:destination="@id/personalFragment"/>
+    </fragment>
 </navigation>

@@ -18,4 +18,9 @@ public class EditIntroFragment extends BaseFragment {
     protected void getFragmentContext(Context context) {
 
     }
+
+    @Override
+    protected void setOnClickListener() {
+
+    }
 }

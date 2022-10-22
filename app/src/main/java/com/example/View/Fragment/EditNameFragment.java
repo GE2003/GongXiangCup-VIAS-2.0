@@ -18,4 +18,9 @@ public class EditNameFragment extends BaseFragment {
     protected void getFragmentContext(Context context) {
 
     }
+
+    @Override
+    protected void setOnClickListener() {
+
+    }
 }

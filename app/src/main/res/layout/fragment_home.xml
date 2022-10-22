@@ -10,11 +10,11 @@
             android:elevation="5dp"
             android:layout_height="237dp"
             app:cardCornerRadius="10dp"
-            android:id="@+id/elasticCardView3"
-            app:layout_constraintTop_toTopOf="@+id/elasticCardView"
+            android:id="@+id/news_btn"
+            app:layout_constraintTop_toTopOf="@+id/iden_btn"
             app:layout_constraintVertical_bias="0.0"
             app:cardBackgroundColor="#4686F9"
-            app:layout_constraintBottom_toTopOf="@+id/elasticCardView2" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/search_btn" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="32dp"
     >
 
@@ -29,10 +29,10 @@
             android:layout_width="149dp"
             android:layout_height="237dp"
             app:cardCornerRadius="10dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/elasticCardView2"
-            android:id="@+id/elasticCardView4" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/search_btn"
+            android:id="@+id/setting_btn" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.604" android:layout_marginBottom="88dp"
-            app:layout_constraintTop_toTopOf="@+id/elasticCardView2" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintTop_toTopOf="@+id/search_btn" app:layout_constraintVertical_bias="0.0"
             app:cardBackgroundColor="#233D4D">
 
         <TextView
@@ -47,7 +47,7 @@
             android:layout_height="237dp"
             app:cardCornerRadius="10dp"
 
-            android:id="@+id/elasticCardView2" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/search_btn" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="64dp" app:cardBackgroundColor="#00A0B5" android:layout_marginStart="32dp">
 
@@ -64,8 +64,8 @@
             android:layout_height="237dp"
             app:cardCornerRadius="10dp"
 
-            android:id="@+id/elasticCardView" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/elasticCardView4" app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/iden_btn" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/setting_btn" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.29"
             app:cardBackgroundColor="#FA761E" android:layout_marginEnd="32dp">
 

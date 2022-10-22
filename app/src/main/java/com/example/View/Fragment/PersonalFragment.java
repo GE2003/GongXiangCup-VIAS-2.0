@@ -8,7 +8,7 @@ public class PersonalFragment extends BaseFragment {
     @Override
     protected int getResId() {
 
-        return R.layout.fragment_personal;
+        return R.layout.activity_setting;
     }
 
     @Override
@@ -18,6 +18,11 @@ public class PersonalFragment extends BaseFragment {
 
     @Override
     protected void getFragmentContext(Context context) {
+
+    }
+
+    @Override
+    protected void setOnClickListener() {
 
     }
 }

@@ -12,11 +12,16 @@ public class NavHostFragment extends BaseFragment {
 
     @Override
     protected void LoadData() {
-
+        
     }
 
     @Override
     protected void getFragmentContext(Context context) {
+
+    }
+
+    @Override
+    protected void setOnClickListener() {
 
     }
 }

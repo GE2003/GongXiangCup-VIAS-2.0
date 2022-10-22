@@ -17,7 +17,32 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+<activity android:name="com.example.View.Activity.NewsActivity"
+          android:exported="true">
 
+</activity>
+        <activity android:name="com.example.View.Activity.LoginActivity"
+                  android:exported="true">
+        </activity>
+        <activity android:name="com.example.View.Activity.QuickLogActivity"
+                  android:exported="true">
+
+        </activity>
+        <activity android:name="com.example.View.Activity.SettingActivity"
+                  android:exported="true">
+        </activity>
+        <activity android:name="com.example.View.Activity.SearchActivity"
+                  android:exported="true">
+
+        </activity>
+        <activity android:name="com.example.View.Activity.AboutUsActivity"
+                  android:exported="true">
+
+        </activity>
+        <activity android:name="com.example.View.Activity.NewsListActivity"
+                  android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>

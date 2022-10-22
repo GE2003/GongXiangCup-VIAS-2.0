@@ -2,6 +2,7 @@ package com.example.Base;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.text.style.TtsSpan;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,9 +11,13 @@ import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import com.example.shiyue.R;
+import org.jetbrains.annotations.NotNull;
 
 public abstract class BaseFragment extends Fragment {
     private FrameLayout mBaseContainer;
@@ -25,6 +30,17 @@ public abstract class BaseFragment extends Fragment {
     public enum State{
         NONE,LOADING,SUCCESS,ERROR,EMPTY,FAVLOADING,HISLOADING
     }
+
+    @Override
+    public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        NavDirections nav2CollectDirections = BaseFragmentDirections.actionBaseFragmentToCollectFragment();
+        NavDirections nav2PersonalDirections = BaseFragmentDirections.actionBaseFragmentToPersonalFragment();
+        NavDirections nav2LikeDirections = BaseFragmentDirections.actionBaseFragmentToLikeFragment();
+
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -33,9 +49,14 @@ public abstract class BaseFragment extends Fragment {
         getFragmentContext(BaseFragment.this.getActivity());
         LoadStatesView(inflater,container);
         unbinder= ButterKnife.bind(this,rootView);
+        initView(rootView);
         LoadData();
+        setOnClickListener();
         return rootView;
     }
+
+   public void initView(View rootView){};
+
     private void   LoadStatesView(LayoutInflater inflater,ViewGroup container){
         //Loading的view
         mLoadingview = loadLoadingview(inflater, container);
@@ -69,4 +90,5 @@ public abstract class BaseFragment extends Fragment {
     protected abstract int getResId();
     protected abstract void LoadData();
     protected abstract void getFragmentContext(Context context);
+    protected abstract void setOnClickListener();
 }
