@@ -1,6 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   android:layout_width="match_parent"
-                                                   android:layout_height="match_parent">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+    <ImageView
+            android:layout_width="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_btn"
+            android:layout_height="30dp">
+    </ImageView>
+<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+    <ImageView
+            android:layout_width="60dp"
+            android:src="@drawable/round"
+            android:layout_height="60dp">
+    </ImageView>
+    <ImageView
+            android:layout_width="32dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/listen_btn"
+            android:layout_height="32dp">
+    </ImageView>
+</RelativeLayout>
+    <ImageView
+            android:layout_width="36dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/report"
+            android:layout_height="36dp">
+    </ImageView>
+</RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="343dp"
+                    android:text="九月全国受理网络违法和不良信息1518.8万件"
+                    android:textSize="28sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_height="82dp">
+            </TextView>
+            <TextView
+                    android:layout_width="184dp"
+                    android:layout_marginLeft="38dp"
+                    android:text="来源:中国新闻网"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_height="35dp">
+            </TextView>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:text="2022-09-29 07:08"
+                    android:textSize="16sp"
+                    android:textColor="@color/grey"
+                    android:layout_height="35dp">
+            </TextView>
+            <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="343dp"
+                    android:textSize="24sp"
+                    android:text="中新网10月10电 据“中央网信办举报中心”微信公众号10日消息，2022年9月，中央网信办举报中心指导全国各级网信举报工作部门、主要网站平台受理举报1518.8万件，环比下降5.2%、同比下降0.4%。
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+　　其中，中央网信办举报中心受理举报58.9万件，环比下降30.1%、同比增长31.1%；各地网信举报工作部门受理举报76.2万件，环比下降7.7%、同比下降29.0%；全国主要网站平台受理举报1383.7万件，环比下降3.6%、同比增长0.8%。
+
+　　在全国主要网站平台受理的举报中，主要商业网站平台受理量占52.3%，达723.8万件。(中新财经)"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="28sp"
+                        android:text="评论"
+                        android:layout_marginLeft="14dp"
+                        android:textColor="@color/black"
+                        android:layout_height="41dp">
+                </TextView>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="28sp"
+                        android:text="22"
+                        android:layout_marginLeft="24dp"
+                        android:textColor="@color/black"
+                        android:layout_height="33dp">
+                </TextView>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:text="43 赞"
+                        android:textSize="28sp"
+                        android:layout_marginLeft="135dp"
+                        android:textColor="@color/grey"
+                        android:layout_height="41dp">
+                </TextView>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="343dp"
+                    android:id="@+id/comment_list"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

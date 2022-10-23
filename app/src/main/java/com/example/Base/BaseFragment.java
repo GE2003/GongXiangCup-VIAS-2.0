@@ -35,9 +35,7 @@ public abstract class BaseFragment extends Fragment {
     public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        NavDirections nav2CollectDirections = BaseFragmentDirections.actionBaseFragmentToCollectFragment();
-        NavDirections nav2PersonalDirections = BaseFragmentDirections.actionBaseFragmentToPersonalFragment();
-        NavDirections nav2LikeDirections = BaseFragmentDirections.actionBaseFragmentToLikeFragment();
+
 
     }
 

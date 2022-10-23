@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                  xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
               android:orientation="vertical"
               android:background="@color/background_white"
               android:layout_height="match_parent">
@@ -51,6 +51,7 @@
   <com.suke.widget.SwitchButton
           android:layout_gravity="center"
           android:layout_width="wrap_content"
+          app:sb_checked_color="@color/btn_blue"
           android:layout_marginLeft="140dp"
           android:layout_height="wrap_content">
 
@@ -83,6 +84,7 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_marginLeft="213dp"
+                app:sb_checked_color="@color/btn_blue"
                 android:layout_height="wrap_content">
 
         </com.suke.widget.SwitchButton>
@@ -128,6 +130,7 @@
     <LinearLayout
             android:background="@color/white"
             android:layout_width="match_parent"
+            android:id="@+id/about_us_btn"
             android:orientation="horizontal"
             android:layout_marginTop="1dp"
             android:layout_height="70dp">

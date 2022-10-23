@@ -91,8 +91,7 @@
             app:layout_constraintVertical_bias="0.973"/>
     <ImageView
             android:layout_width="26dp"
-
-            android:layout_height="33dp" app:srcCompat="@drawable/go_btn" android:id="@+id/imageView5"
+            android:layout_height="33dp" app:srcCompat="@drawable/go_btn" android:id="@+id/free_back_btn"
             android:rotation="180"
             app:layout_constraintStart_toEndOf="@+id/textView4" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.879" app:layout_constraintBottom_toTopOf="@+id/guideline5"

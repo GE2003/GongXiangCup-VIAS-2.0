@@ -33,6 +33,7 @@
             android:background="@color/grey"
             android:layout_height="1dp">
     </ImageView>
+
 <net.lucode.hackware.magicindicator.MagicIndicator
         android:layout_width="match_parent"
         android:id="@+id/news_indicator"

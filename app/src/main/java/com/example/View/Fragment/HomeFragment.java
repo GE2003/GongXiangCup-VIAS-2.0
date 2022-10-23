@@ -16,6 +16,7 @@ import butterknife.ButterKnife;
 import com.example.Base.BaseFragment;
 import com.example.Base.BaseFragmentDirections;
 import com.example.View.Activity.NewsActivity;
+import com.example.View.Activity.NewsListActivity;
 import com.example.View.Activity.SearchActivity;
 import com.example.View.Activity.SettingActivity;
 import com.example.shiyue.R;
@@ -62,7 +63,7 @@ public class HomeFragment extends BaseFragment {
             news_btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(getActivity(), NewsActivity.class);
+                    Intent intent = new Intent(getActivity(), NewsListActivity.class);
                     startActivity(intent);
                 }
             });

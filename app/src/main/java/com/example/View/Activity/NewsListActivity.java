@@ -1,6 +1,7 @@
 package com.example.View.Activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +18,7 @@ import com.example.Utils.Constants;
 import com.example.Utils.ScaleTransitionPagerTitleView;
 import com.example.View.adapter.NewsPagerAdapter;
 import com.example.shiyue.R;
+import com.skydoves.elasticviews.ElasticCardView;
 import net.lucode.hackware.magicindicator.FragmentContainerHelper;
 import net.lucode.hackware.magicindicator.MagicIndicator;
 import net.lucode.hackware.magicindicator.ViewPagerHelper;
@@ -41,11 +43,14 @@ public class NewsListActivity extends AppCompatActivity {
     public ViewPager viewPager;
     public NewsPagerAdapter newsPagerAdapter = new NewsPagerAdapter(getSupportFragmentManager());
     public FragmentContainerHelper fragmentContainerHelper ;
+    private ElasticCardView news_cv;
+
     @Override
     protected void onCreate(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
         setContentView(R.layout.activity_newslist);
+
       viewPager =this.findViewById(R.id.view_pager_fr);
         viewPager.setAdapter(newsPagerAdapter);
       magicIndicator=this.findViewById(R.id.news_indicator);
@@ -54,6 +59,18 @@ public class NewsListActivity extends AppCompatActivity {
         newsPagerAdapter =new NewsPagerAdapter(getSupportFragmentManager());
         fragmentContainerHelper  = new FragmentContainerHelper(magicIndicator);
         initIndicator();
+        setOnClcikListener();
+    }
+
+    private void setOnClcikListener() {
+
+   /*     news_cv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NewsListActivity.this,ReadingActivity.class);
+                startActivity(intent);
+            }
+        });*/
     }
 
     private void initIndicator() {

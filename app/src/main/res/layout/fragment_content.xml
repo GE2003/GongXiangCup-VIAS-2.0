@@ -3,6 +3,13 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:orientation="vertical"
+        android:background="@color/background_white"
         android:layout_height="match_parent">
+<androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/news_list"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+</androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>

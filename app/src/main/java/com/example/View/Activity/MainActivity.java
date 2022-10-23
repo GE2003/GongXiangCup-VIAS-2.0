@@ -1,8 +1,6 @@
 package com.example.View.Activity;
 
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,7 +11,6 @@ import butterknife.ButterKnife;
 import com.example.Base.BaseFragment;
 import com.example.View.Fragment.HomeFragment;
 import com.example.View.Fragment.MineFragment;
-import com.example.View.Fragment.PersonalFragment;
 import com.example.shiyue.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import org.jetbrains.annotations.NotNull;
@@ -21,7 +18,6 @@ import org.jetbrains.annotations.NotNull;
 public class MainActivity extends AppCompatActivity {
 
     private HomeFragment homeFragment;
-    private PersonalFragment personalFragment;
    @BindView(R.id.bottom_nav)
     public BottomNavigationView navigationView;
     private MineFragment mineFragment;
@@ -55,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void initFragment() {
         homeFragment = new HomeFragment();
-        personalFragment = new PersonalFragment();
         mineFragment = new MineFragment();
         switchFragment(homeFragment);
     }
