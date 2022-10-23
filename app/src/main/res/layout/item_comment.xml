@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:layout_height="wrap_content">
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <TextView
+            android:layout_width="48dp"
+            android:textSize="24sp"
+            android:id="@+id/comment_name"
+            android:text="古月"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:layout_height="35dp">
+    </TextView>
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <com.skydoves.elasticviews.ElasticImageView
+            android:layout_width="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center"
+            android:src="@drawable/like_btn"
+            android:layout_height="20dp">
+    </com.skydoves.elasticviews.ElasticImageView>
+    <TextView
+            android:layout_width="wrap_content"
+            android:text="1321"
+            android:id="@+id/comment_like"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_height="29dp">
+
+    </TextView>
+</LinearLayout>
+</RelativeLayout>
+    <TextView
+            android:layout_width="321dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/comment_text"
+            android:text="CPP团队天下第一"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+    </TextView>
+    <LinearLayout
+            android:layout_width="321dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="162dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/reply"
+                android:layout_height="28dp">
+        </ImageView>
+        <ImageView
+                android:layout_width="16dp"
+                android:src="@drawable/cha"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:layout_height="16dp">
+        </ImageView>
+    </LinearLayout>
+</LinearLayout>

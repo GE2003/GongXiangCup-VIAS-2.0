@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:paddingTop="10dp"
+              android:layout_height="130dp">
+<com.skydoves.elasticviews.ElasticCardView
+        android:layout_width="379dp"
+        android:layout_gravity="center"
+        android:id="@+id/news_card_view"
+        app:cardCornerRadius="10dp"
+        android:layout_height="110dp">
+    <LinearLayout
+            android:layout_width="335dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="match_parent"
+                android:textSize="24sp"
+                android:id="@+id/news_title"
+                android:textColor="@color/black"
+                android:text="九月全国受理网络违法和不良信息1518.8万件"
+                android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="80dp"
+                android:textSize="16sp"
+                android:text="中国新闻网"
+                android:id="@+id/writer_name"
+                android:layout_marginLeft="10dp"
+                android:layout_height="24dp">
+        </TextView>
+        <TextView
+                android:layout_width="80dp"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:id="@+id/time_tv"
+                android:text="两天前"
+                android:layout_height="24dp">
+        </TextView>
+        <TextView
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:id="@+id/read_tv"
+                android:text="891731人看过"
+                android:layout_marginLeft="70dp"
+                android:layout_height="24dp">
+        </TextView>
+    </LinearLayout>
+</com.skydoves.elasticviews.ElasticCardView>
+</LinearLayout>
